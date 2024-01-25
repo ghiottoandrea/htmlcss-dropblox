@@ -1,10 +1,10 @@
 /* #region debug */
 .debug header{
-    /* background-color: orang; */
+    background-color: orange;
 }
 .debug main{
     height: 1000px;
-    background-color: brown;
+    /* background-color: brown; */
 }
 .debug footer{
     height: 150px;
@@ -16,6 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+    border: 1px dashed; /* debug only */
 }
 
 :root {
@@ -24,9 +25,11 @@
     --dropbox-dark: rgba(0, 0, 0, 1);
     --dropbox-lighter: rgba(255, 255, 255, 1);
 }
-nav{
-    display: flex;
 
+h1{
+    text-align: center;
+    font-size: 60px;
+    padding: 2rem 0;
 }
 footer{
     background-color: var(--dropbox-dark);
@@ -40,8 +43,15 @@ footer{
     background-color: var(--dropbox-primary);
     color: var(--dropbox-lighter);
     padding: 0.4rem 0.9rem;
+    /* margin-left:-1rem ;per avvicinare "accedi" a "inizia" nav */
 }
-
+.d-flex{
+    display: flex;
+}
+.big-container{
+    width: 80%;
+    margin: auto;
+}
 /* #endregion utilities */
 
 /* #region header */
@@ -65,3 +75,21 @@ footer{
     height: 20px;
 }
 /* #endregion header */
+
+/* #region main */
+.jumbotron{
+    height: 600px;
+    background-color: var(--dropbox-secondary);
+}
+
+.col-30{
+    width: 30%;
+}
+
+.col-70{
+    width: 70%;
+}
+.jumbo{
+    width: 100%;
+}
+/* #endregion main */
