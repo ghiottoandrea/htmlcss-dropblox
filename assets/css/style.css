@@ -1,22 +1,27 @@
 /* #region debug */
-.debug header{
+.debug header {
     /* background-color: orange; */
 }
-.debug main{
-    height: 1000px;
+
+.debug main {
+    height: 4000px;
     /* background-color: brown; */
 }
-.debug footer{
+
+.debug footer {
     height: 150px;
 }
+
 /* #endregion debug */
+
 /* #region common */
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    border: 1px dashed; debug only
+    /* border: 1px dashed;
+    debug only */
 }
 
 :root {
@@ -26,12 +31,15 @@
     --dropbox-lighter: rgba(255, 255, 255, 1);
 }
 
-h1{
+h1 {
     text-align: center;
     font-size: 60px;
     padding: 2rem 0;
 }
-footer{
+h3{
+    padding: 1rem 0;
+}
+footer {
     background-color: var(--dropbox-dark);
     color: var(--dropbox-lighter);
 }
@@ -39,30 +47,42 @@ footer{
 /* #endregion common */
 
 /* #region utilities */
-.btn{
+.btn {
     background-color: var(--dropbox-primary);
     color: var(--dropbox-lighter);
     padding: 0.4rem 0.9rem;
     /* margin-left:-1rem ;per avvicinare "accedi" a "inizia" nav */
 }
-.d-flex{
+
+.d-flex {
     display: flex;
 }
-.big-container{
+
+.big-container {
     width: 80%;
     margin: auto;
+}
+.container{
+    width: 70%;
+    margin: auto;
+}
+
+.gap-05{
+    gap: 0.5rem;
+    padding-bottom: 2rem ;
 }
 /* #endregion utilities */
 
 /* #region header */
-.left-menu{
+.left-menu {
     width: 50%;
     display: flex;
     gap: 2rem;
     padding: 0.8rem 1rem;
     align-items: center;
 }
-.right-menu{
+
+.right-menu {
     width: 50%;
     display: flex;
     gap: 2rem;
@@ -70,34 +90,94 @@ footer{
     justify-content: end;
     align-items: center;
 }
-.logo{
+
+.logo {
     width: 100px;
     height: 20px;
 }
+
 /* #endregion header */
 
 /* #region main */
-.jumbotron{
-    height: 590px;
+.jumbotron {
+    height: 670px;
     background-color: var(--dropbox-secondary);
 }
 
-.col-30{
+.col-30 {
     width: 30%;
 }
 
-.col-70{
+.col-70 {
     width: 70%;
 }
-.jumbo{
+
+.jumbo {
     width: 100%;
 }
 
-.btn-jumbo{
+.btn-jumbo {
     padding: 2rem 0;
 }
-.arrow{
+
+.arrow {
     font-size: 50px;
-    padding-top: 2rem;
+    padding-top: 6rem;
 }
+
+.jumbo-speach {
+    font-size: 18px;
+}
+
+.business{
+    padding-top: 10rem;
+}
+.card{
+    margin: 2rem 0;
+    border: 1px solid lightgray;
+    /* padding: 2rem */
+}
+.main-card{
+    display: flex;
+    flex-direction: column;
+}
+.col-4{
+    width: calc((100% / 12) * 4);
+}
+.category{
+    text-align: center;
+    border: 1px solid lightgray;
+    padding: 0.7rem 0;
+}
+.price{
+    padding-bottom: 4rem;
+}
+
+.btn-card{
+    text-align: center;
+    padding: 5rem 0;
+}
+.main-card{
+    padding: 1rem 2rem;
+    height: 350px;
+}
+.footer-card{
+    padding: 4rem 2rem;
+    height: 600px;
+}
+ .check-color{
+    color: var(--dropbox-primary);
+ }
+ .list-check{
+padding-top: 2rem;
+ }
+
+ .row{
+    display: flex;
+    gap: 3rem;
+ }
+
+ .shop-now{
+    padding: 0 2rem;
+ }
 /* #endregion main */
