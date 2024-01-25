@@ -1,3 +1,16 @@
+/* #region debug */
+.debug header{
+    /* background-color: orang; */
+}
+.debug main{
+    height: 1000px;
+    background-color: brown;
+}
+.debug footer{
+    height: 150px;
+}
+/* #endregion debug */
+/* #region common */
 * {
     margin: 0;
     padding: 0;
@@ -11,3 +24,44 @@
     --dropbox-dark: rgba(0, 0, 0, 1);
     --dropbox-lighter: rgba(255, 255, 255, 1);
 }
+nav{
+    display: flex;
+
+}
+footer{
+    background-color: var(--dropbox-dark);
+    color: var(--dropbox-lighter);
+}
+
+/* #endregion common */
+
+/* #region utilities */
+.btn{
+    background-color: var(--dropbox-primary);
+    color: var(--dropbox-lighter);
+    padding: 0.4rem 0.9rem;
+}
+
+/* #endregion utilities */
+
+/* #region header */
+.left-menu{
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    padding: 0.8rem 1rem;
+    align-items: center;
+}
+.right-menu{
+    width: 50%;
+    display: flex;
+    gap: 2rem;
+    padding: 0.8rem 1rem;
+    justify-content: end;
+    align-items: center;
+}
+.logo{
+    width: 100px;
+    height: 20px;
+}
+/* #endregion header */
