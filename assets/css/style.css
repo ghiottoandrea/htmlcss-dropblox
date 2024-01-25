@@ -78,6 +78,7 @@ footer {
 /* #endregion utilities */
 
 /* #region header */
+
 .left-menu {
     width: 50%;
     display: flex;
@@ -102,7 +103,8 @@ footer {
 
 /* #endregion header */
 
-/* #region main */
+/* #region jumbotron */
+
 .jumbotron {
     height: 670px;
     background-color: var(--dropbox-secondary);
@@ -133,28 +135,34 @@ footer {
     font-size: 18px;
 }
 
+/* #endregion jumbotron */
+
+/* #region business */
 .business {
     padding-top: 12rem;
 }
-.selection{
+
+.selection {
     padding: 2rem 0;
 }
-.selection :last-child{
-    padding-left: 5rem;
+
+.row {
+    display: flex;
+    gap: 3rem;
 }
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+
 .card {
     margin: 2rem 0;
     border: 1px solid lightgray;
-    /* padding: 2rem */
 }
 
 .main-card {
     display: flex;
     flex-direction: column;
-}
-
-.col-4 {
-    width: calc((100% / 12) * 4);
 }
 
 .category {
@@ -177,6 +185,10 @@ footer {
     height: 350px;
 }
 
+.shop-now {
+    padding: 0 2rem;
+}
+
 .footer-card {
     padding: 4rem 2rem;
     height: 600px;
@@ -190,16 +202,29 @@ footer {
     padding-top: 2rem;
 }
 
-.row {
+/* card orizontal */
+.main-card-orizontal {
     display: flex;
-    gap: 3rem;
+    align-items: center;
+
 }
 
-.shop-now {
+.orizontal-card-case {
+    border: 1px solid lightgray;
+}
+
+.left-card {
+    width: 70%;
     padding: 0 2rem;
 }
 
-.main-card-orizontal{
-    display: flex;
+.right-card {
+    width: 30%;
+    text-align: center;
 }
-/* #endregion main */
+
+.footer-card-oriz {
+    padding: 3rem 2rem;
+}
+
+/* #endregion business */
