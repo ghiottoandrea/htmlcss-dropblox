@@ -1,0 +1,13 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root {
+    --dropbox-primary: rgba(0, 97, 255, 1);
+    --dropbox-secondary: rgba(180, 208, 231, 1);
+    --dropbox-dark: rgba(0, 0, 0, 1);
+    --dropbox-lighter: rgba(255, 255, 255, 1);
+}
