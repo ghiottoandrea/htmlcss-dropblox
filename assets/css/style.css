@@ -1,6 +1,6 @@
 /* #region debug */
 .debug header{
-    background-color: orange;
+    /* background-color: orange; */
 }
 .debug main{
     height: 1000px;
@@ -16,7 +16,7 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
-    border: 1px dashed; /* debug only */
+    border: 1px dashed; debug only
 }
 
 :root {
@@ -78,7 +78,7 @@ footer{
 
 /* #region main */
 .jumbotron{
-    height: 600px;
+    height: 590px;
     background-color: var(--dropbox-secondary);
 }
 
@@ -91,5 +91,13 @@ footer{
 }
 .jumbo{
     width: 100%;
+}
+
+.btn-jumbo{
+    padding: 2rem 0;
+}
+.arrow{
+    font-size: 50px;
+    padding-top: 2rem;
 }
 /* #endregion main */
