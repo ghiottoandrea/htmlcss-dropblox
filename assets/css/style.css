@@ -36,9 +36,11 @@ h1 {
     font-size: 60px;
     padding: 2rem 0;
 }
-h3{
+
+h3 {
     padding: 1rem 0;
 }
+
 footer {
     background-color: var(--dropbox-dark);
     color: var(--dropbox-lighter);
@@ -62,15 +64,17 @@ footer {
     width: 80%;
     margin: auto;
 }
-.container{
+
+.container {
     width: 70%;
     margin: auto;
 }
 
-.gap-05{
+.gap-05 {
     gap: 0.5rem;
-    padding-bottom: 2rem ;
+    padding-bottom: 2rem;
 }
+
 /* #endregion utilities */
 
 /* #region header */
@@ -129,55 +133,73 @@ footer {
     font-size: 18px;
 }
 
-.business{
-    padding-top: 10rem;
+.business {
+    padding-top: 12rem;
 }
-.card{
+.selection{
+    padding: 2rem 0;
+}
+.selection :last-child{
+    padding-left: 5rem;
+}
+.card {
     margin: 2rem 0;
     border: 1px solid lightgray;
     /* padding: 2rem */
 }
-.main-card{
+
+.main-card {
     display: flex;
     flex-direction: column;
 }
-.col-4{
+
+.col-4 {
     width: calc((100% / 12) * 4);
 }
-.category{
+
+.category {
     text-align: center;
     border: 1px solid lightgray;
     padding: 0.7rem 0;
 }
-.price{
+
+.price {
     padding-bottom: 4rem;
 }
 
-.btn-card{
+.btn-card {
     text-align: center;
     padding: 5rem 0;
 }
-.main-card{
+
+.main-card {
     padding: 1rem 2rem;
     height: 350px;
 }
-.footer-card{
+
+.footer-card {
     padding: 4rem 2rem;
     height: 600px;
 }
- .check-color{
-    color: var(--dropbox-primary);
- }
- .list-check{
-padding-top: 2rem;
- }
 
- .row{
+.check-color {
+    color: var(--dropbox-primary);
+}
+
+.list-check {
+    padding-top: 2rem;
+}
+
+.row {
     display: flex;
     gap: 3rem;
- }
+}
 
- .shop-now{
+.shop-now {
     padding: 0 2rem;
- }
+}
+
+.main-card-orizontal{
+    display: flex;
+}
 /* #endregion main */
