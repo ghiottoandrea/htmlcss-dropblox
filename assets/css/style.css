@@ -4,7 +4,7 @@
 }
 
 .debug main {
-    height: 6000px;
+    /* height: 10000px; */
     /* background-color: brown; */
 }
 
@@ -55,16 +55,21 @@ h3 {
 footer {
     background-color: var(--dropbox-dark);
     color: var(--dropbox-lighter);
+    margin-top: 9rem;
 }
 
 .container>h2 {
     font-size: 50px;
     padding-bottom: 3rem;
 }
-.small-container h2{
+
+.faq h2,
+.call-to-action h2 {
     font-size: 50px;
-    padding: 6rem 0;
+    padding: 5rem 0;
+    border-bottom: 1px solid lightgray;
 }
+
 /* #endregion common */
 
 /* #region utilities */
@@ -88,10 +93,7 @@ footer {
     width: 60%;
     margin: auto;
 }
-.small-container{
-    width: 50%;
-    margin: auto;
-}
+
 .gap-05 {
     gap: 0.5rem;
     padding-bottom: 2rem;
@@ -150,7 +152,7 @@ footer {
 /* #region jumbotron */
 
 .jumbotron {
-    height: 670px;
+    height: 630px;
     background-color: var(--dropbox-secondary);
 }
 
@@ -180,7 +182,9 @@ footer {
 }
 
 .selection {
-    /* padding-top: 1rem; */
+    display: flex;
+    gap: 4rem;
+    padding: 1rem 0;
 }
 
 .card {
@@ -291,7 +295,7 @@ footer {
 /* #region Dropbox-util */
 
 .dropbox-util {
-    padding: 4rem 0;
+    padding: 10rem 0;
 }
 
 /* #endregion Dropbox-util */
@@ -379,18 +383,26 @@ footer {
 
 /* #region call-to-action*/
 
-.btn-call-to-action{ 
+.btn-call-to-action {
     background-color: var(--dropbox-light);
     padding: 0.5rem 1rem;
 }
 
-.call-to-action{
+.call-to-action {
     background-color: var(--dropbox-secondary);
 }
-.trial{
+
+.trial {
     flex-grow: 1;
     justify-content: center;
     align-items: center;
     display: flex;
 }
+
 /* #endregion call-to-action*/
+
+.ask {
+    justify-content: space-between;
+    border-bottom: 1px solid lightgray;
+    padding: 3rem 0;
+}
