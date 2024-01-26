@@ -9,7 +9,7 @@
 }
 
 .debug footer {
-    height: 150px;
+    /* height: 300px; */
 }
 
 /* #endregion debug */
@@ -70,6 +70,19 @@ footer {
     border-bottom: 1px solid lightgray;
 }
 
+ul{
+    list-style: none;
+}
+footer h3{
+    font-size: 25px;
+}
+footer a{
+    text-decoration: none;
+    color: var(--dropbox-lighter);
+}
+li{
+    padding: 0.5rem 0;
+}
 /* #endregion common */
 
 /* #region utilities */
@@ -112,7 +125,9 @@ footer {
 .col-30 {
     width: 30%;
 }
-
+.col-5{
+    width: calc(100% / 5);
+}
 .col-70 {
     width: 70%;
 }
@@ -401,8 +416,23 @@ footer {
 
 /* #endregion call-to-action*/
 
+/* #region faq */
 .ask {
     justify-content: space-between;
     border-bottom: 1px solid lightgray;
     padding: 3rem 0;
 }
+/* #endregion faq */
+
+/* #region footer */
+.top-footer{
+    padding: 5rem 0;
+}
+
+.bottom-footer{
+    display: flex;
+    gap: 0.4rem;
+    color: var(--dropbox-light);
+    padding-bottom: 2rem;
+}
+/* #endregion footer */
