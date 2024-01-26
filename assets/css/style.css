@@ -4,7 +4,7 @@
 }
 
 .debug main {
-    height: 4000px;
+    height: 6000px;
     /* background-color: brown; */
 }
 
@@ -75,6 +75,25 @@ footer {
     padding-bottom: 2rem;
 }
 
+.row {
+    display: flex;
+    gap: 3rem;
+padding: 2rem 0;
+}
+
+.col-4 {
+    width: calc((100% / 12) * 4);
+}
+.col-30 {
+    width: 30%;
+}
+
+.col-70 {
+    width: 70%;
+}
+.col-4 > img{
+    width: 100%;
+}
 /* #endregion utilities */
 
 /* #region header */
@@ -110,13 +129,6 @@ footer {
     background-color: var(--dropbox-secondary);
 }
 
-.col-30 {
-    width: 30%;
-}
-
-.col-70 {
-    width: 70%;
-}
 
 .jumbo {
     width: 100%;
@@ -143,20 +155,10 @@ footer {
 }
 
 .selection {
-    padding: 2rem 0;
-}
-
-.row {
-    display: flex;
-    gap: 3rem;
-}
-
-.col-4 {
-    width: calc((100% / 12) * 4);
+    padding-top: 3rem;
 }
 
 .card {
-    margin: 2rem 0;
     border: 1px solid lightgray;
 }
 
