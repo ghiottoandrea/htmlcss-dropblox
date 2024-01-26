@@ -297,8 +297,7 @@ footer {
     width: calc((100% / 12) * 4);
     display: flex;
     flex-wrap: wrap;
-    border: 1px dashed;
-    height: 400px;
+    aspect-ratio: 1;
 }
 
 
@@ -307,19 +306,34 @@ footer {
 }
 
 .logo-box>img {
-max-width: 100%;
-max-height: 100%;
-margin: auto;
-filter: invert(100%);
+    max-width: 100%;
+    max-height: 100%;
+    margin: auto;
+    filter: invert(100%);
 
 }
 
 .logo-box {
     width: 50%;
-    height: 200px;
+    aspect-ratio: 1;
     align-items: center;
     display: flex;
-    padding: 3rem;
+    padding: 4rem;
+}
+
+.center {
+    background-color: var(--dropbox-light);
+    padding: 2rem;
+}
+
+.center img {
+    width: 50%;
+    padding-top: 2rem
+}
+
+.center p {
+    padding-bottom: 2rem;
+    font-size: 18px
 }
 
 .designit {
@@ -338,17 +352,21 @@ filter: invert(100%);
 .topps {
     background-color: var(--topps-logo);
 }
-.bicycle{
+
+.bicycle {
     background-color: var(--bicycle-logo);
 }
 
-.hearts{
+.hearts {
     background-color: var(--hearst-logo);
 }
-.lonely{
+
+.lonely {
     background-color: var(--lonely-logo);
 }
-.outdoor{
+
+.outdoor {
     background-color: var(--outdoor-logo);
 }
+
 /* #endregion logos */
