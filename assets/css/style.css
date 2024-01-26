@@ -29,6 +29,17 @@
     --dropbox-secondary: rgba(180, 208, 231, 1);
     --dropbox-dark: rgba(0, 0, 0, 1);
     --dropbox-lighter: rgba(255, 255, 255, 1);
+    --dropbox-light: rgba(245, 245, 245, 1);
+    /* logos-palet */
+    --designit-logo: rgba(162, 211, 155, 1);
+    --arizona-uni-logo: rgba(97, 8, 43, 1);
+    --florida-uni-logo: rgba(0, 147, 206, 1);
+    --topps-logo: rgba(255, 28, 28, 1);
+    --bicycle-logo: rgba(213, 0, 31, 1);
+    --hearst-logo: rgba(180, 208, 231, 1);
+    --lonely-logo: rgba(13, 36, 129, 1);
+    --outdoor-logo: rgba(255, 216, 48, 1);
+
 }
 
 h1 {
@@ -44,6 +55,11 @@ h3 {
 footer {
     background-color: var(--dropbox-dark);
     color: var(--dropbox-lighter);
+}
+
+.container>h2 {
+    font-size: 47px;
+    padding-bottom: 3rem;
 }
 
 /* #endregion common */
@@ -78,12 +94,13 @@ footer {
 .row {
     display: flex;
     gap: 3rem;
-padding: 2rem 0;
+    padding: 2rem 0;
 }
 
 .col-4 {
     width: calc((100% / 12) * 4);
 }
+
 .col-30 {
     width: 30%;
 }
@@ -91,9 +108,11 @@ padding: 2rem 0;
 .col-70 {
     width: 70%;
 }
-.col-4 > img{
+
+.col-4>img {
     width: 100%;
 }
+
 /* #endregion utilities */
 
 /* #region header */
@@ -155,7 +174,7 @@ padding: 2rem 0;
 }
 
 .selection {
-    padding-top: 3rem;
+    /* padding-top: 1rem; */
 }
 
 .card {
@@ -232,24 +251,104 @@ padding: 2rem 0;
 /* #endregion business */
 
 /* #region partner */
-.partner{
+.partner {
     padding: 8rem 0;
 }
-.partner-img{
+
+.partner-img {
     width: 100%;
     padding-right: 4rem;
 }
-.col-8{
+
+.col-8 {
     width: calc((100% / 12) * 8);
 }
-.partner-title{
+
+.partner-title {
     padding-top: 4rem;
 }
-.partner-speach{
+
+.partner-speach {
     padding: 1rem 0 3rem 0;
 }
-.btn-partner{
+
+.btn-partner {
     border: 1px solid;
     padding: 0.4rem 1rem;
 }
+
 /* #endregion partner */
+
+/* #region operations */
+/* #endregion operations */
+
+/* #region Dropbox-util */
+
+.dropbox-util {
+    padding: 4rem 0;
+}
+
+/* #endregion Dropbox-util */
+
+/* #region logos */
+.left,
+.center,
+.right {
+    width: calc((100% / 12) * 4);
+    display: flex;
+    flex-wrap: wrap;
+    border: 1px dashed;
+    height: 400px;
+}
+
+
+.logos {
+    display: flex;
+}
+
+.logo-box>img {
+max-width: 100%;
+max-height: 100%;
+margin: auto;
+filter: invert(100%);
+
+}
+
+.logo-box {
+    width: 50%;
+    height: 200px;
+    align-items: center;
+    display: flex;
+    padding: 3rem;
+}
+
+.designit {
+    background-color: var(--designit-logo);
+
+}
+
+.arizona-uni {
+    background-color: var(--arizona-uni-logo);
+}
+
+.florida-uni {
+    background-color: var(--florida-uni-logo);
+}
+
+.topps {
+    background-color: var(--topps-logo);
+}
+.bicycle{
+    background-color: var(--bicycle-logo);
+}
+
+.hearts{
+    background-color: var(--hearst-logo);
+}
+.lonely{
+    background-color: var(--lonely-logo);
+}
+.outdoor{
+    background-color: var(--outdoor-logo);
+}
+/* #endregion logos */
