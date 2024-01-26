@@ -58,10 +58,13 @@ footer {
 }
 
 .container>h2 {
-    font-size: 47px;
+    font-size: 50px;
     padding-bottom: 3rem;
 }
-
+.small-container h2{
+    font-size: 50px;
+    padding: 6rem 0;
+}
 /* #endregion common */
 
 /* #region utilities */
@@ -85,7 +88,10 @@ footer {
     width: 60%;
     margin: auto;
 }
-
+.small-container{
+    width: 50%;
+    margin: auto;
+}
 .gap-05 {
     gap: 0.5rem;
     padding-bottom: 2rem;
@@ -370,3 +376,21 @@ footer {
 }
 
 /* #endregion logos */
+
+/* #region call-to-action*/
+
+.btn-call-to-action{ 
+    background-color: var(--dropbox-light);
+    padding: 0.5rem 1rem;
+}
+
+.call-to-action{
+    background-color: var(--dropbox-secondary);
+}
+.trial{
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+/* #endregion call-to-action*/
