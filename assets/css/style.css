@@ -43,8 +43,7 @@
 }
 
 h1 {
-    text-align: center;
-    font-size: 60px;
+    font-size: 85px;
     padding: 2rem 0;
 }
 
@@ -70,19 +69,27 @@ footer {
     border-bottom: 1px solid lightgray;
 }
 
-ul{
+a {
+    text-decoration: none;
+    color: var(--dropbox-dark);
+}
+
+ul {
     list-style: none;
 }
-footer h3{
+
+footer h3 {
     font-size: 25px;
 }
-footer a{
-    text-decoration: none;
+
+footer a {
     color: var(--dropbox-lighter);
 }
-li{
+
+li {
     padding: 0.5rem 0;
 }
+
 /* #endregion common */
 
 /* #region utilities */
@@ -90,7 +97,6 @@ li{
     background-color: var(--dropbox-primary);
     color: var(--dropbox-lighter);
     padding: 0.4rem 0.9rem;
-    /* margin-left:-1rem ;per avvicinare "accedi" a "inizia" nav */
 }
 
 .d-flex {
@@ -125,9 +131,11 @@ li{
 .col-30 {
     width: 30%;
 }
-.col-5{
+
+.col-5 {
     width: calc(100% / 5);
 }
+
 .col-70 {
     width: 70%;
 }
@@ -167,17 +175,17 @@ li{
 /* #region jumbotron */
 
 .jumbotron {
-    height: 630px;
     background-color: var(--dropbox-secondary);
 }
 
 
-.jumbo {
+.jumbo-img {
     width: 100%;
+    margin-bottom: -5.5rem;
 }
 
 .btn-jumbo {
-    padding: 2rem 0;
+    padding: 3rem 0;
 }
 
 .arrow {
@@ -223,7 +231,7 @@ li{
 
 .btn-card {
     text-align: center;
-    padding: 5rem 0;
+    padding: 5rem 0 3rem 0;
 }
 
 .main-card {
@@ -232,12 +240,18 @@ li{
 }
 
 .shop-now {
-    padding: 0 2rem;
+    padding: 0 0 2rem 2rem;
+    border-bottom: 1px solid lightgray;
+    border-image: linear-gradient(to left, lightgray 80%, transparent 50%) 100% 1;
+
 }
 
 .footer-card {
-    padding: 4rem 2rem;
+    margin-top: 4rem;
+    padding: 2rem;
     height: 600px;
+    /* border-top: 1px solid;
+  border-image: linear-gradient(to right, #000 40%, transparent 50%) 100% 1; */
 }
 
 .check-color {
@@ -298,8 +312,9 @@ li{
 }
 
 .btn-partner {
-    border: 1px solid;
+    border: 1px solid var(--dropbox-dark);
     padding: 0.4rem 1rem;
+    color: var(--dropbox-dark);
 }
 
 /* #endregion partner */
@@ -307,13 +322,13 @@ li{
 /* #region operations */
 /* #endregion operations */
 
-/* #region Dropbox-util */
+/* #region dropbox-util */
 
 .dropbox-util {
     padding: 10rem 0;
 }
 
-/* #endregion Dropbox-util */
+/* #endregion dropbox-util */
 
 /* #region logos */
 .left,
@@ -354,6 +369,12 @@ li{
 .center img {
     width: 50%;
     padding-top: 2rem
+}
+
+.border-bottom {
+    height: 30%;
+    border-bottom: 1px solid lightgray;
+    border-image: linear-gradient(to right, lightgray 20%, transparent 10%) 100% 1;
 }
 
 .center p {
@@ -401,6 +422,7 @@ li{
 .btn-call-to-action {
     background-color: var(--dropbox-light);
     padding: 0.5rem 1rem;
+    color: var(--dropbox-dark);
 }
 
 .call-to-action {
@@ -422,17 +444,21 @@ li{
     border-bottom: 1px solid lightgray;
     padding: 3rem 0;
 }
+
 /* #endregion faq */
 
 /* #region footer */
-.top-footer{
-    padding: 5rem 0;
+.top-footer {
+    padding: 5rem 0 4rem;
 }
 
-.bottom-footer{
+.bottom-footer {
     display: flex;
     gap: 0.4rem;
     color: var(--dropbox-light);
-    padding-bottom: 2rem;
+    padding: 2rem 0;
+    border-top: 1px solid;
+    border-image: linear-gradient(to right, white 10%, transparent 10%) 100% 1;
 }
+
 /* #endregion footer */
